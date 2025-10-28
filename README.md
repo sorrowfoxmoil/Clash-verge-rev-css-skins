@@ -11,30 +11,29 @@
 
 ---
 
-## 🎨 主题预览 / Theme Preview
-
-主要适用于深色模式，不同主题的区别在于透明度。全部带有流光效果  
-*Mainly suitable for dark mode. The difference lies in transparency. All with transparent flow effect.*
-
 ### 🔴🔵 流光 / Transparent Red & Blue-Violet
-| Red | Blue-Violet |
-|-----|--------------|
-| <img src="https://github.com/user-attachments/assets/057fbaf8-9446-448b-af12-7dd206c852b9" width="400" /> | <img src="https://github.com/user-attachments/assets/d026ee25-e87f-4593-942b-248e5e9bf740" width="400" /> |
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/057fbaf8-9446-448b-af12-7dd206c852b9" width="45%" />
+  <img src="https://github.com/user-attachments/assets/d026ee25-e87f-4593-942b-248e5e9bf740" width="45%" />
+</p>
 
 ### 🪟 毛玻璃 / Frosted Glass Red & Blue-Purple
-| Red | Blue-Purple |
-|-----|--------------|
-| <img src="https://github.com/user-attachments/assets/ee9e9268-2104-4796-b05e-23295e4da90f" width="400" /> | <img src="https://github.com/user-attachments/assets/87dd0230-3789-47f7-80f9-4436b143bcc6" width="400" /> |
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ee9e9268-2104-4796-b05e-23295e4da90f" width="45%" />
+  <img src="https://github.com/user-attachments/assets/87dd0230-3789-47f7-80f9-4436b143bcc6" width="45%" />
+</p>
 
 ### ✨ 更加透明 / More Transparent Red & Blue-Violet
-| Red | Blue-Violet |
-|-----|--------------|
-| <img src="https://github.com/user-attachments/assets/8beeaef9-6b95-4629-958e-33e8f9f3d7a8" width="400" /> | <img src="https://github.com/user-attachments/assets/b322c1f5-b2c4-4c59-aa6e-10aff76ed7eb" width="400" /> |
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8beeaef9-6b95-4629-958e-33e8f9f3d7a8" width="45%" />
+  <img src="https://github.com/user-attachments/assets/b322c1f5-b2c4-4c59-aa6e-10aff76ed7eb" width="45%" />
+</p>
 
 ### ❄️ 完全毛玻璃 / Completely Frosted Glass Red & Blue-Purple
-| Red | Blue-Purple |
-|-----|--------------|
-| <img src="https://github.com/user-attachments/assets/7d783542-fa1a-4ed0-96ab-42f32d984d8c" width="400" /> | <img src="https://github.com/user-attachments/assets/8324fe16-6ffb-48cb-8106-7ed2a58c1126" width="400" /> |
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7d783542-fa1a-4ed0-96ab-42f32d984d8c" width="45%" />
+  <img src="https://github.com/user-attachments/assets/8324fe16-6ffb-48cb-8106-7ed2a58c1126" width="45%" />
+</p>
 
 ---
 
