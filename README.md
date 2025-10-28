@@ -5,7 +5,7 @@
 
 ---
 
-## ✨ 流光效果展示 / Transparent Flow Effect
+## 📺 流光效果展示 / Transparent Flow Effect
 ![选中](https://github.com/user-attachments/assets/a010b6d4-6cbd-4c65-8eb1-e8922418f6dc)
 ![选中](https://github.com/user-attachments/assets/da85768e-d3d1-41fe-8d74-61e583123f9f)
 
@@ -13,8 +13,8 @@
 
 ## 🎨 主题预览 / Theme Preview
 
-主要适用于深色模式，不同主题的区别在于透明度。  
-*Mainly suitable for dark mode. The difference lies in transparency.*
+主要适用于深色模式，不同主题的区别在于透明度。全部带有流光效果
+*Mainly suitable for dark mode. The difference lies in transparency.All with transparent flow effect.*
 
 ### 🔴🔵 流光 / Transparent Red & Blue-Violet
 <img src="https://github.com/user-attachments/assets/057fbaf8-9446-448b-af12-7dd206c852b9" width="450" />
