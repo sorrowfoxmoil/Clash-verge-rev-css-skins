@@ -13,8 +13,8 @@
 
 ## 🎨 主题预览 / Theme Preview
 
-主要适用于深色模式，不同主题的区别在于透明度。  
-*Mainly suitable for dark mode. The difference lies in transparency.*
+主要适用于深色模式，不同主题的区别在于透明度。全部带有流光效果
+*Mainly suitable for dark mode. The difference lies in transparency.All with transparent flow effect.*
 
 ### 🔴🔵 流光 / Transparent Red & Blue-Violet
 <img src="https://github.com/user-attachments/assets/057fbaf8-9446-448b-af12-7dd206c852b9" width="450" />
