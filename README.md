@@ -7,7 +7,7 @@
 
 ## 📺 流光效果展示 / Transparent Flow Effect
 ![选中](https://github.com/user-attachments/assets/a010b6d4-6cbd-4c65-8eb1-e8922418f6dc)
-![选中](https://github.com/user-attachments/assets/e38fe5ad-e795-4ba0-848b-d1c2341b98f1)
+![选中](https://github.com/user-attachments/assets/da85768e-d3d1-41fe-8d74-61e583123f9f)
 
 ---
 
