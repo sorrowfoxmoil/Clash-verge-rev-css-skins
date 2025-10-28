@@ -5,54 +5,63 @@
 
 ---
 
+## 📺 流光效果展示 / Transparent Flow Effect
+![选中](https://github.com/user-attachments/assets/a010b6d4-6cbd-4c65-8eb1-e8922418f6dc)
+![选中](https://github.com/user-attachments/assets/e38fe5ad-e795-4ba0-848b-d1c2341b98f1)
+
+---
+
 ## 🎨 主题预览 / Theme Preview
 
 主要适用于深色模式，不同主题的区别在于透明度。  
 *Mainly suitable for dark mode. The difference lies in transparency.*
 
 ### 🔴🔵 流光 / Transparent Red & Blue-Violet
-<img src="https://github.com/user-attachments/assets/c3eb4fa0-a9e6-4c9f-88db-525c4379ad28" width="400" />
-<img src="https://github.com/user-attachments/assets/e7f01932-bbf6-42c6-94fd-2e0f9c080378" width="400" />
+<img src="https://github.com/user-attachments/assets/057fbaf8-9446-448b-af12-7dd206c852b9" width="450" />
+<img src="https://github.com/user-attachments/assets/d026ee25-e87f-4593-942b-248e5e9bf740" width="450" />
 
 ### 🪟 毛玻璃 / Frosted Glass Red & Blue-Purple
-<img src="https://github.com/user-attachments/assets/a2c753de-ed5d-4d74-aab5-be558b0c0bb3" width="400" />
-<img src="https://github.com/user-attachments/assets/428fa77c-d0e1-44cb-b889-f2a0194d1e0e" width="400" />
+<img src="https://github.com/user-attachments/assets/ee9e9268-2104-4796-b05e-23295e4da90f" width="450" />
+<img src="https://github.com/user-attachments/assets/87dd0230-3789-47f7-80f9-4436b143bcc6" width="450" />
 
 ### ✨ 更加透明 / More Transparent Red & Blue-Violet
-<img src="https://github.com/user-attachments/assets/c240ed11-3e77-4669-8c8b-4c56b91b2604" width="400" />
-<img src="https://github.com/user-attachments/assets/7ea07ab8-7fbd-4f31-9991-2dd0ca71c05e" width="400" />
+<img src="https://github.com/user-attachments/assets/8beeaef9-6b95-4629-958e-33e8f9f3d7a8" width="450" />
+<img src="https://github.com/user-attachments/assets/b322c1f5-b2c4-4c59-aa6e-10aff76ed7eb" width="450" />
 
 ### ❄️ 完全毛玻璃 / Completely Frosted Glass Red & Blue-Purple
-<img src="https://github.com/user-attachments/assets/02279480-c9e6-4f04-9553-c0c8cfc9a83e" width="400" />
-<img src="https://github.com/user-attachments/assets/9f84a468-fad9-4c1e-9e28-53424e1a130e" width="400" />
+<img src="https://github.com/user-attachments/assets/7d783542-fa1a-4ed0-96ab-42f32d984d8c" width="450" />
+<img src="https://github.com/user-attachments/assets/8324fe16-6ffb-48cb-8106-7ed2a58c1126" width="450" />
 
 ---
 
 ## ⚠️ 已知问题 / Known Issues
 
-- 部分组件透明度过高，导致重叠  
+- **透明度过高**：部分组件透明度过高，导致重叠  
   *Some components are too transparent, causing overlap*  
-  <img src="https://github.com/user-attachments/assets/5e9e552b-db50-401a-9965-924e86371edb" width="400" />
+  <img src="https://github.com/user-attachments/assets/046396b3-355f-4e2d-8349-94d53ee91ee9" height="300" />
 
-- 开关像素问题  
+- **开关像素问题**  
   *Switch pixel rendering issue*  
-  <img src="https://github.com/user-attachments/assets/97c89005-ce2c-46d3-a48a-b9c7f32434ac" width="120" />
+  <img src="https://github.com/user-attachments/assets/a1847752-2ee5-43e2-9963-2b99b7aeb0b9" width="120" />
 
-- 设置页面部分组件边框异常  
+- **边框异常**：设置页面部分组件边框渲染异常  
   *Border rendering issue on settings page*  
-  <img src="https://github.com/user-attachments/assets/bd1f2d6d-e9f4-4ace-aae8-e2a56dc14884" width="400" />
+  <img src="https://github.com/user-attachments/assets/bb839306-e53b-4e32-a681-b3d9493e0b71" width="500" />
 
 ---
 
 ## 📥 使用方法 / How to Use
 
-1. **复制主题 CSS：** 打开你喜欢的主题 CSS 内容并复制  
+1. **复制主题 CSS**  
+   打开你喜欢的主题 CSS 内容并复制  
    *Copy the CSS of the theme you like*
-2. **打开设置：** Clash Verge Rev → 设置 → 主题设置 → CSS 注入  
+
+2. **打开设置**  
+   Clash Verge Rev → 设置 → 主题设置 → CSS 注入  
    *Clash Verge Rev → Settings → Theme Settings → CSS Injection*
-3. **粘贴并保存：** 将 CSS 粘贴到“CSS 注入”，点击保存  
+
+3. **粘贴并保存**  
+   将 CSS 粘贴到“CSS 注入”，点击保存  
    *Paste the CSS into “CSS Injection” and save*
 
 ---
-
-
