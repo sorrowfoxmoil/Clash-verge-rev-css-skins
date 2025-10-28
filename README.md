@@ -17,8 +17,7 @@
 *Mainly suitable for dark mode. The difference lies in transparency.All with transparent flow effect.*
 
 ### 🔴🔵 流光 / Transparent Red & Blue-Violet
-<img src="https://github.com/user-attachments/assets/057fbaf8-9446-448b-af12-7dd206c852b9" width="450" />
-<img src="https://github.com/user-attachments/assets/d026ee25-e87f-4593-942b-248e5e9bf740" width="450" />
+<img src="https://github.com/user-attachments/assets/057fbaf8-9446-448b-af12-7dd206c852b9" width="450" /> <img src="https://github.com/user-attachments/assets/d026ee25-e87f-4593-942b-248e5e9bf740" width="450" />
 
 ### 🪟 毛玻璃 / Frosted Glass Red & Blue-Purple
 <img src="https://github.com/user-attachments/assets/ee9e9268-2104-4796-b05e-23295e4da90f" width="450" />
