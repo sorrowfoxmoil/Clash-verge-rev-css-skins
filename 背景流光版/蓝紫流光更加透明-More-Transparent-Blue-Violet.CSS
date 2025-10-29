@@ -642,3 +642,70 @@ input:focus, textarea:focus, select:focus {
     visibility: visible !important;
     opacity: 1 !important;
 }
+
+/* === 增强版蓝紫色背景流光效果 === */
+.css-l3ykv8::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 15%,
+        rgba(100, 70, 220, 0.25) 30%,
+        rgba(140, 110, 255, 0.4) 45%,
+        rgba(160, 130, 255, 0.6) 50%,
+        rgba(140, 110, 255, 0.4) 55%,
+        rgba(100, 70, 220, 0.25) 70%,
+        transparent 85%
+    );
+    animation: blueVioletShine 3s infinite linear;
+    z-index: 1;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+@keyframes blueVioletShine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+/* 添加第二层流光增强效果 */
+.css-l3ykv8::before {
+    background: 
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(100, 70, 220, 0.2) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(120, 90, 255, 0.15) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 40% 40%,
+            rgba(80, 60, 200, 0.18) 0%,
+            transparent 50%
+        ),
+        linear-gradient(135deg, 
+            rgba(5, 3, 15, 0.6) 0%, 
+            rgba(25, 15, 70, 0.4) 50%, 
+            rgba(15, 8, 45, 0.7) 100%);
+}
+
+/* 添加背景脉动动画增强流光效果 */
+.css-l3ykv8::before {
+    animation: backgroundPulse 8s infinite ease-in-out;
+}
+
+@keyframes backgroundPulse {
+    0%, 100% { 
+        opacity: 0.7;
+    }
+    50% { 
+        opacity: 0.9;
+    }
+}

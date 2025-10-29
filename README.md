@@ -26,7 +26,9 @@
 ### ✨ 更加透明 / More Transparent Red & Blue-Violet
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8beeaef9-6b95-4629-958e-33e8f9f3d7a8" width="45%" />
-  <img src="https://github.com/user-attachments/assets/b322c1f5-b2c4-4c59-aa6e-10aff76ed7eb" width="45%" />
+  <img width="45%" src="https://github.com/user-attachments/assets/10e77702-b8ae-4fc4-a985-3fce3edf59d7" />
+
+
 </p>
 
 ### ❄️ 完全毛玻璃 / Completely Frosted Glass Red & Blue-Purple
