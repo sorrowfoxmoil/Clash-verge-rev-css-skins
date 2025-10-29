@@ -9,9 +9,11 @@
 ![选中](https://github.com/user-attachments/assets/a010b6d4-6cbd-4c65-8eb1-e8922418f6dc)
 ![选中](https://github.com/user-attachments/assets/da85768e-d3d1-41fe-8d74-61e583123f9f)
 
-## ➕ 背景流光效果对比 / Transparent Flow Effect
-
----
+## ➕ 背景流光效果 / Background shimmering effect
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/36c8ee11-2ead-4f7f-91f3-760aabf9e78a" alt="背景流光版" width="45%" />
+  <img src="https://github.com/user-attachments/assets/1e3240ab-5f21-4231-b12a-69c1ba4af9a1" alt="背景流光版1" width="45%" />
+</p>
 
 ### 🔴🔵 流光 / Transparent Red & Blue-Violet
 <p align="center">
