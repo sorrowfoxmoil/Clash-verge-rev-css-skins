@@ -9,6 +9,8 @@
 ![选中](https://github.com/user-attachments/assets/a010b6d4-6cbd-4c65-8eb1-e8922418f6dc)
 ![选中](https://github.com/user-attachments/assets/da85768e-d3d1-41fe-8d74-61e583123f9f)
 
+## ➕ 背景流光效果对比 / Transparent Flow Effect
+
 ---
 
 ### 🔴🔵 流光 / Transparent Red & Blue-Violet
