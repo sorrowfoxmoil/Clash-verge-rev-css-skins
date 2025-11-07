@@ -42,8 +42,8 @@
 </p>
 
 ---
-
-## ⚠️ 已知问题 / Known Issues
+<details>
+<summary> <h2>⚠️ 已知问题 / Known Issues</h2></summary>
 
 - **透明度过高**：部分组件透明度过高，导致重叠  
   *Some components are too transparent, causing overlap*  
@@ -56,6 +56,7 @@
 - **边框异常**：设置页面部分组件边框渲染异常  
   *Border rendering issue on settings page*  
   <img src="https://github.com/user-attachments/assets/bb839306-e53b-4e32-a681-b3d9493e0b71" width="500" />
+</details>
 
 ---
 
