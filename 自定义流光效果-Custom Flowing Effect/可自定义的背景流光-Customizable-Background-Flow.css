@@ -1,0 +1,61 @@
+/* === 可自定义颜色的背景流光效果 === */
+/* === Customizable Background Flowing Light Effect === */
+
+:root {
+  --bg-flow-color: 255, 0, 0; 
+  /* 红色 - 可修改为其他颜色 (修改此处的 RGB 值即可) */
+  /* Red - you can change to other colors (edit the RGB values here) */
+}
+
+.css-l3ykv8::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 15%,
+    rgba(var(--bg-flow-color), 0.2) 30%, 
+    /* 浅色流光效果 (20% 透明度，可自行调整) */
+    /* Light flowing effect (20% opacity, customizable by user) */
+
+    rgba(var(--bg-flow-color), 0.35) 45%, 
+    /* 中等流光效果 (35% 透明度，可自行调整) */
+    /* Medium flowing effect (35% opacity, user can adjust) */
+
+    rgba(var(--bg-flow-color), 0.5) 50%, 
+    /* 最亮的流光效果 (50% 透明度，可修改为更强或更弱) */
+    /* Brightest flowing effect (50% opacity, can be increased or decreased) */
+
+    rgba(var(--bg-flow-color), 0.35) 55%, 
+    /* 回落到中等流光效果 (35% 透明度，可调整过渡效果) */
+    /* Transition back to medium flowing effect (35% opacity, adjustable) */
+
+    rgba(var(--bg-flow-color), 0.2) 70%, 
+    /* 再次回到浅色流光效果 (20% 透明度，可修改) */
+    /* Returning to light flowing effect (20% opacity, customizable) */
+
+    transparent 85%
+  );
+  animation: bgFlow 4s infinite linear;
+  z-index: 1;
+  opacity: 0.7; 
+  /* 整体透明度 (0.7)，可修改以增强或减弱效果 */
+  /* Overall opacity (0.7), can be changed to strengthen or soften effect */
+  pointer-events: none;
+}
+
+@keyframes bgFlow {
+  0% { 
+    transform: translateX(-100%) translateY(-100%) rotate(45deg); 
+    /* 初始位置：左上角，旋转 45 度 */
+    /* Initial position: top-left, rotated 45 degrees */
+  }
+  100% { 
+    transform: translateX(100%) translateY(100%) rotate(45deg); 
+    /* 结束位置：右下角，保持旋转 45 度 */
+    /* Final position: bottom-right, still rotated 45 degrees */
+  }
+}

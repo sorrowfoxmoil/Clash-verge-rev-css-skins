@@ -1,0 +1,93 @@
+/* === 优化版可自定义流光效果 === */
+/* === Optimized Customizable Flowing Effect === */
+
+:root {
+  --flow-color: 255, 215, 0; 
+  /* 金色（默认）- 修改为其他 RGB 值以更换流光颜色，例如 34,197,94 为绿色 */
+  /* Gold (default) - change the RGB values to customize the flowing color, e.g., 34,197,94 for green */
+
+  --flow-speed: 1s;
+  /* 流光动画时长 - 可设为 0.6s / 1.5s 等以加快或放慢动画 */
+  /* Flow animation duration - set to 0.6s / 1.5s etc. to speed up or slow down the effect */
+}
+
+/* 核心组件流光效果：在悬停时生成横向移动的伪元素作为流光 */
+ /* Core component flowing effect: create a horizontally moving pseudo-element on hover */
+[class*="test-button"]:hover::before,
+[class*="website-button"]:hover::before,
+[class*="proxy"]:hover::before,
+.MuiSwitch-root:hover::before,
+[role="button"]:hover::before,
+[role="switch"]:hover::before,
+button:hover::before,
+.btn:hover::before,
+tr:hover::before {
+  content: "";
+  /* 伪元素占位内容（必须） */
+  /* Pseudo-element placeholder content (required) */
+
+  position: absolute;
+  /* 绝对定位以覆盖目标元素 */
+  /* Absolute positioning to cover the target element */
+
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  /* 初始位置在元素左侧外部，覆盖整个元素以实现滑入效果 */
+  /* Start position is outside the left of the element; covers full element for sliding effect */
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(var(--flow-color), 0.4),
+    rgba(var(--flow-color), 0.6),
+    rgba(var(--flow-color), 0.4),
+    transparent
+  );
+  /* 渐变使用 CSS 变量的 RGB 值并配合 alpha 通道控制亮度与范围；
+     调整各 rgba 的 alpha（如 0.2 / 0.4 / 0.6）可改变流光强度与宽度 */
+  /* Gradient uses the RGB from the CSS variable with alpha channels to control brightness and spread;
+     tweak the rgba alpha values (e.g., 0.2 / 0.4 / 0.6) to change intensity and width of the shimmer */
+
+  animation: flow var(--flow-speed) ease-in-out;
+  /* 使用变量控制动画速度，可通过 --flow-speed 调整 */
+  /* Use the variable to control animation speed; adjust --flow-speed as needed */
+
+  z-index: -1;
+  /* 将伪元素放在元素后面以避免遮挡内容；如需置于上方可改为正值 */
+  /* Place the pseudo-element behind the element to avoid covering content; set to positive value if you want it above */
+
+  pointer-events: none;
+  /* 禁止伪元素响应鼠标事件，避免影响交互 */
+  /* Prevent the pseudo-element from receiving pointer events to avoid interfering with interactions */
+}
+
+/* 核心组件悬停边框与阴影：使用流光颜色增强视觉反馈 */
+ /* Hover border and shadow for core components: use flowing color to enhance feedback */
+[class*="test-button"]:hover,
+[class*="website-button"]:hover,
+[class*="proxy"]:hover,
+.MuiSwitch-root:hover,
+[role="button"]:hover,
+[role="switch"]:hover,
+button:hover,
+.btn:hover,
+tr:hover {
+  border-color: rgba(var(--flow-color), 0.8) !important;
+  /* 悬停边框颜色（alpha 可调整，例如 0.6 - 1.0） */
+  /* Hover border color (adjust alpha as needed, e.g., 0.6 - 1.0) */
+
+  box-shadow: 0 0 12px rgba(var(--flow-color), 0.4) !important;
+  /* 悬停阴影，数值可调整：模糊半径 12px、alpha 0.4 可根据需要放大或缩小 */
+  /* Hover shadow; values are adjustable: blur radius 12px and alpha 0.4 can be increased or decreased */
+}
+
+/* 动画关键帧：从左向右移动伪元素以产生流光滑动效果 */
+ /* Keyframes for animation: move the pseudo-element left-to-right to create the flowing shimmer */
+@keyframes flow {
+  0% { left: -100%; }
+  100% { left: 100%; }
+  /* 明确设置起止位置以保证跨浏览器一致性 */
+  /* Explicitly set start and end positions for cross-browser consistency */
+}
