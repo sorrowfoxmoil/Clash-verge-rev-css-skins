@@ -55,6 +55,27 @@
 </p>
 </details>
 
+<details>
+  <summary><h2> ☁ 移除悬停强调效果及边框 / Usage Guide for Removing Hover Highlight and Border </h2></summary>
+  
+  ## ❓ 为什么要加入移除效果 / Why Add the Removal Effect
+
+- **原因 / Reason**  
+  2.4.3 重构后悬停样式异常，边框与位移失效。为避免视觉混乱，加入移除逻辑。  
+  *Refactoring in 2.4.3 broke hover styles. Removal logic prevents visual inconsistency.*
+
+- **目的 / Purpose**  
+  保持主题样式一致性，统一用户体验。  
+  *Ensure consistent theme styles and user experience.*
+
+- **演示 / Demonstration**
+<p align="center">
+<img width="45%" alt="image" src="https://github.com/user-attachments/assets/57ff009f-f36a-4396-9b7f-2b5e6f8cdbbd" />
+<img width="45%" alt="image" src="https://github.com/user-attachments/assets/814d213a-1866-424d-aa2f-174365b6af0a" />
+
+
+
+</details>
 
 <h2>深色主题</h2>
 
@@ -133,7 +154,11 @@
 
 ---
 
-## 🌈 自定义流光效果 / How to Add Flowing Effect
+<h2>可自定义效果 / Customizable effects.</h2>
+<details>
+  
+<summary><h3> 🌈 自定义流光效果 / How to Add Flowing Effect
+</summary></h3>
 
 1. **粘贴流光 CSS**  
    将 main 分支中的自定义流光效果 CSS 文件内容复制，并粘贴到你现有主题 CSS 的末尾  
@@ -150,3 +175,12 @@
 4. **自定义颜色与透明度（可选）**  
    修改 `--flow-color` 或 `--bg-flow-color` 的 RGB 数值以更换颜色；调整 `rgba(..., 透明度)` 中的透明度系数（如 0.2、0.35、0.5）以增强或减弱效果  
    *Customize the color by editing the RGB values in `--flow-color` or `--bg-flow-color`; adjust the alpha values in `rgba(..., alpha)` (e.g., 0.2, 0.35, 0.5) to strengthen or soften the effect*
+</details>
+<details>
+<summary><h3> 🔧 移除悬停强调效果及边框 / Usage Guide for Removing Hover Highlight and Border
+</summary></h3>
+
+  - **用法 / How to Use**  
+  将对应的「移除悬停强调效果及边框」CSS 代码复制到你现有的 CSS 文件末尾，即可生效  
+  *Copy the CSS code for “Remove Hover Highlight and Border” and paste it at the end of your existing CSS file to activate it*
+</details>
