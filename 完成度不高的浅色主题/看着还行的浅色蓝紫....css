@@ -1,0 +1,324 @@
+/* 背景图片与主容器样式 - 保持透明度 */
+.css-1li7dvq,
+.css-l3ykv8 {
+    background-image: url('https://i.postimg.cc/sgSbC6Vv/long-hua.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* 透明叠加层 - 改为蓝紫色渐变 */
+.css-l3ykv8::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+        rgba(10, 5, 20, 0.85) 0%, 
+        rgba(40, 20, 80, 0.6) 30%, 
+        rgba(25, 10, 50, 0.75) 70%, 
+        rgba(5, 2, 15, 0.9) 100%);
+    z-index: 1;
+}
+
+/* 蓝紫色流光效果 */
+.css-l3ykv8::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 25%,
+        rgba(100, 70, 200, 0.15) 40%,
+        rgba(120, 80, 220, 0.35) 50%,
+        rgba(100, 70, 200, 0.15) 60%,
+        transparent 75%
+    );
+    animation: shine 3.5s infinite linear;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+/* 修复所有非透明组件 - 统一为透明蓝紫色 */
+* {
+    background-color: transparent !important;
+}
+
+/* 主内容区 - 提高饱和度 */
+.css-1li7dvq>* {
+    position: relative;
+    backdrop-filter: blur(12px);
+    z-index: 2;
+    background: linear-gradient(135deg, 
+        rgba(30, 15, 60, 0.4) 0%, 
+        rgba(50, 25, 100, 0.3) 100%) !important;
+    border: 1px solid rgba(100, 70, 180, 0.5);
+    border-radius: 8px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 
+        0 6px 20px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(60, 30, 120, 0.2);
+}
+
+.css-l3ykv8>* {
+    position: relative;
+    backdrop-filter: blur(8px);
+    z-index: 2;
+    background: linear-gradient(135deg, 
+        rgba(25, 12, 50, 0.35) 0%, 
+        rgba(40, 20, 80, 0.25) 100%) !important;
+    border: 1px solid rgba(90, 60, 160, 0.4);
+    border-radius: 8px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(50, 25, 100, 0.15);
+}
+
+/* 悬停动效 - 蓝紫色发光 */
+.css-1li7dvq>*:hover,
+.css-l3ykv8>*:hover {
+    background: linear-gradient(135deg, 
+        rgba(40, 20, 80, 0.5) 0%, 
+        rgba(60, 30, 120, 0.4) 100%) !important;
+    border-color: rgba(140, 100, 220, 0.7);
+    box-shadow: 
+        0 0 25px rgba(120, 80, 200, 0.5),
+        0 10px 30px rgba(0, 0, 0, 0.4),
+        inset 0 0 20px rgba(70, 40, 140, 0.3);
+    transform: translateY(-3px) scale(1.02);
+    animation: pulseBlue 2s infinite;
+}
+
+@keyframes pulseBlue {
+    0%, 100% { 
+        box-shadow: 
+            0 0 25px rgba(120, 80, 200, 0.5),
+            0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    50% { 
+        box-shadow: 
+            0 0 30px rgba(140, 100, 220, 0.7),
+            0 12px 35px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* 全局透明修复 */
+html, body {
+    --background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* 修复所有可能非透明的容器 */
+.MuiBox-root,
+.base-container,
+.MuiPaper-root,
+.MuiCard-root,
+.MuiAppBar-root,
+.MuiDrawer-paper {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* 修复表格和列表非透明部分 */
+.MuiBox-root > section,
+.base-container > section,
+.MuiPaper-root > section,
+.MuiCard-root > div {
+    background: linear-gradient(145deg, 
+        rgba(20, 10, 40, 0.25) 0%, 
+        rgba(35, 18, 70, 0.2) 100%) !important;
+    border: 1px solid rgba(80, 50, 150, 0.3);
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.MuiBox-root > section:hover,
+.base-container > section:hover,
+.MuiPaper-root > section:hover,
+.MuiCard-root > div:hover {
+    background: linear-gradient(145deg, 
+        rgba(30, 15, 60, 0.4) 0%, 
+        rgba(45, 22, 90, 0.3) 100%) !important;
+    border-color: rgba(120, 80, 200, 0.6);
+    box-shadow: 
+        0 6px 25px rgba(100, 70, 180, 0.3),
+        0 0 0 1px rgba(80, 50, 150, 0.2);
+}
+
+/* 修复所有表格和网格非透明部分 */
+table, tbody, thead, tr, td, th,
+.MuiTable-root, .MuiTableBody-root, .MuiTableHead-root,
+.MuiTableRow-root, .MuiTableCell-root {
+    background-color: rgba(15, 8, 30, 0.2) !important;
+    border-color: rgba(70, 40, 130, 0.25) !important;
+    backdrop-filter: blur(6px);
+}
+
+/* 表格行悬停效果 - 蓝紫色 */
+tr:hover,
+.MuiTableRow-root:hover {
+    background: rgba(35, 18, 70, 0.35) !important;
+    transform: translateX(3px);
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 15px rgba(80, 50, 150, 0.2);
+}
+
+/* 文字发光效果 - 蓝紫色 */
+.text-primary, .title, h1, h2, h3, h4, h5, h6,
+.MuiTypography-h1, .MuiTypography-h2, .MuiTypography-h3,
+.MuiTypography-h4, .MuiTypography-h5, .MuiTypography-h6 {
+    color: rgba(230, 220, 255, 0.95) !important;
+    text-shadow: 
+        0 0 12px rgba(120, 80, 200, 0.5),
+        0 0 25px rgba(80, 50, 150, 0.3);
+    transition: text-shadow 0.3s ease;
+}
+
+.text-primary:hover, .title:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover,
+.MuiTypography-h1:hover, .MuiTypography-h2:hover, .MuiTypography-h3:hover,
+.MuiTypography-h4:hover, .MuiTypography-h5:hover, .MuiTypography-h6:hover {
+    text-shadow: 
+        0 0 18px rgba(140, 100, 220, 0.7),
+        0 0 30px rgba(100, 70, 180, 0.4);
+}
+
+.text-secondary, .description, p, span,
+.MuiTypography-body1, .MuiTypography-body2 {
+    color: rgba(210, 200, 240, 0.85) !important;
+    text-shadow: 0 0 8px rgba(70, 40, 130, 0.4);
+}
+
+/* 修复按钮和交互元素非透明部分 */
+button, .btn, [role="button"],
+.MuiButton-root, .MuiIconButton-root {
+    background: linear-gradient(135deg, 
+        rgba(40, 20, 80, 0.45) 0%, 
+        rgba(30, 15, 60, 0.35) 100%) !important;
+    border: 1px solid rgba(100, 70, 180, 0.5) !important;
+    color: rgba(240, 230, 255, 0.95) !important;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 6px rgba(90, 60, 160, 0.4);
+    backdrop-filter: blur(8px);
+}
+
+button:hover, .btn:hover, [role="button"]:hover,
+.MuiButton-root:hover, .MuiIconButton-root:hover {
+    background: linear-gradient(135deg, 
+        rgba(50, 25, 100, 0.6) 0%, 
+        rgba(40, 20, 80, 0.5) 100%) !important;
+    border-color: rgba(140, 100, 220, 0.7) !important;
+    box-shadow: 
+        0 0 20px rgba(120, 80, 200, 0.5),
+        inset 0 0 15px rgba(80, 50, 150, 0.3);
+    transform: translateY(-2px);
+}
+
+/* 修复输入框和表单元素非透明部分 */
+input, textarea, select,
+.MuiInputBase-root, .MuiTextField-root,
+.MuiSelect-root, .MuiOutlinedInput-root {
+    background: rgba(25, 12, 50, 0.3) !important;
+    border: 1px solid rgba(90, 60, 160, 0.4) !important;
+    color: rgba(240, 230, 255, 0.9) !important;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+input:focus, textarea:focus, select:focus,
+.MuiInputBase-root:focus, .MuiTextField-root:focus,
+.MuiSelect-root:focus, .MuiOutlinedInput-root:focus {
+    border-color: rgba(140, 100, 220, 0.7) !important;
+    box-shadow: 
+        0 0 15px rgba(120, 80, 200, 0.4),
+        inset 0 0 10px rgba(80, 50, 150, 0.25);
+    background: rgba(35, 18, 70, 0.4) !important;
+}
+
+/* 修复状态指示器和标签非透明部分 */
+[data-status], .status, .tag, .label,
+.MuiChip-root, .MuiBadge-root {
+    background: rgba(30, 15, 60, 0.4) !important;
+    border: 1px solid rgba(80, 50, 150, 0.3) !important;
+    color: rgba(220, 210, 250, 0.9) !important;
+    backdrop-filter: blur(5px);
+}
+
+/* 修复滚动条非透明部分 */
+::-webkit-scrollbar {
+    width: 8px;
+    background: transparent !important;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(15, 8, 30, 0.2) !important;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, 
+        rgba(90, 60, 160, 0.6) 0%, 
+        rgba(70, 40, 130, 0.4) 100%);
+    border-radius: 4px;
+    border: 1px solid rgba(50, 25, 100, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, 
+        rgba(110, 80, 190, 0.7) 0%, 
+        rgba(90, 60, 160, 0.5) 100%);
+    box-shadow: 0 0 10px rgba(100, 70, 180, 0.4);
+}
+
+/* 修复分隔线和边框非透明部分 */
+hr, .divider, .separator,
+.MuiDivider-root {
+    background: rgba(80, 50, 150, 0.3) !important;
+    border-color: rgba(70, 40, 130, 0.25) !important;
+}
+
+/* 特殊修复：代理状态卡片 */
+.proxy-card, .connection-item, .service-status {
+    background: linear-gradient(135deg, 
+        rgba(25, 12, 50, 0.35) 0%, 
+        rgba(40, 20, 80, 0.25) 100%) !important;
+    border: 1px solid rgba(90, 60, 160, 0.4) !important;
+    backdrop-filter: blur(10px);
+}
+
+/* 特殊修复：测试结果区域 */
+.test-result, .speed-test, .latency {
+    background: rgba(20, 10, 40, 0.3) !important;
+    border: 1px solid rgba(80, 50, 150, 0.35) !important;
+}
+
+/* 修复所有可能遗漏的非透明背景 */
+[style*="background-color"]:not([style*="transparent"]):not([style*="rgba(0,0,0,0"]):not(.css-1li7dvq):not(.css-l3ykv8) {
+    background-color: rgba(20, 10, 40, 0.25) !important;
+    backdrop-filter: blur(8px);
+}
+
+/* 强制修复所有白色或浅色背景 */
+[style*="background: white"],
+[style*="background: #fff"],
+[style*="background: #ffffff"],
+[style*="background-color: white"],
+[style*="background-color: #fff"],
+[style*="background-color: #ffffff"] {
+    background: rgba(25, 12, 50, 0.3) !important;
+    backdrop-filter: blur(8px);
+}
