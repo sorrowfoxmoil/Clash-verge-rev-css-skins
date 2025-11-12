@@ -56,18 +56,16 @@
 </details>
 
 <details>
-<summary><h2> ☁ 移除悬停强调效果及边框 / Usage Guide for Removing Hover Highlight and Border </h2></summary>
+<summary> <h2>☁ 移除悬停强调效果及边框 / Removing Hover Highlight and Border </h2></summary>
   
   ## ❓ 为什么要加入移除效果 / Why Add the Removal Effect
 
 - **原因 / Reason**  
   2.4.3 重构后悬停样式异常，边框与位移失效。为避免视觉混乱，加入移除逻辑。  
   *Refactoring in 2.4.3 broke hover styles. Removal logic prevents visual inconsistency.*
-
 - **目的 / Purpose**  
   保持主题样式一致性，统一用户体验。  
   *Ensure consistent theme styles and user experience.*
-
 - **演示 / Demonstration**
 <p align="center">
 <img width="45%" alt="image" src="https://github.com/user-attachments/assets/57ff009f-f36a-4396-9b7f-2b5e6f8cdbbd" />
