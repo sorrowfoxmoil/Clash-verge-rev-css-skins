@@ -27,9 +27,9 @@
 
 默认的流光效果为金色。
 *The default flowing effect is a golden shimmer.*
-
-![金色流光](https://github.com/user-attachments/assets/9691293b-2126-4587-b7df-4b8333f7cdbd)
-
+<p align="center">
+<img alt=“金色流光” src="https://github.com/user-attachments/assets/9691293b-2126-4587-b7df-4b8333f7cdbd" width="60%" />
+</p>
 
 ---
 
@@ -40,20 +40,21 @@
 
 #### 🛠️ 示例 / Example
 
-将默认设置：
+- **默认设置为金色流光 / Default setting: golden shimmer**  
+  > `--flow-color: 255, 215, 0;`
 
->`--flow-color: 255, 215, 0;`
+- **修改为绿色（RGB 值为 $34, 197, 94$） / Change to green (RGB value: $34, 197, 94$)**  
+  > `--flow-color: 34, 197, 94;`
 
-修改为绿色（RGB 值 $34, 197, 94$）：
+- **效果预览 / Result preview:**  
+  你将得到绿色流光效果  
+  *You will get a green flowing effect*
 
->`--flow-color: 34, 197, 94;`
-
-你将得到绿色流光效果：
-
-![绿色流光](https://github.com/user-attachments/assets/6e8aadbf-4fb3-47bc-99f8-95a03909019a)
-
-
+<p align="center">
+  <img alt="绿色流光" src="https://github.com/user-attachments/assets/6e8aadbf-4fb3-47bc-99f8-95a03909019a" width="60%" />
+</p>
 </details>
+
 
 <h2>深色主题</h2>
 
