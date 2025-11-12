@@ -71,7 +71,7 @@
 - **演示 / Demonstration**
 <p align="center">
 <img width="45%" alt="image" src="https://github.com/user-attachments/assets/57ff009f-f36a-4396-9b7f-2b5e6f8cdbbd" />
-<img width="45%" alt="image" src="https://github.com/user-attachments/assets/814d213a-1866-424d-aa2f-174365b6af0a" />
+<img width="45%" alt="image" src="https://github.com/user-attachments/assets/d61712cd-b178-4016-9d27-35342138d092" />
 
 
 
