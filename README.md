@@ -17,6 +17,44 @@
 </p>
 </details>
 
+<details>
+<summary>
+<h2> 🕶 自定义流光效果 / Custom: Flowing Effect</summary></h2>
+
+---
+
+### 🎨 默认效果：金色流光 / Default Effect: Golden Shimmer
+
+默认的流光效果为金色。
+*The default flowing effect is a golden shimmer.*
+
+![金色流光](https://github.com/user-attachments/assets/9691293b-2126-4587-b7df-4b8333f7cdbd)
+
+
+---
+
+#### 💡 提示与参考 / Tip & Reference
+
+*  具体请参考 `可定义的组件流光-Definable-Component-Flow` 里的注释说明。
+*  For details, please refer to the comments within the `Definable-Component-Flow` component.
+
+#### 🛠️ 示例 / Example
+
+将默认设置：
+
+>`--flow-color: 255, 215, 0;`
+
+修改为绿色（RGB 值 $34, 197, 94$）：
+
+>`--flow-color: 34, 197, 94;`
+
+你将得到绿色流光效果：
+
+![绿色流光](https://github.com/user-attachments/assets/6e8aadbf-4fb3-47bc-99f8-95a03909019a)
+
+
+</details>
+
 <h2>深色主题</h2>
 
 ### 🔴🔵 流光 / Transparent Red & Blue-Violet
@@ -93,3 +131,21 @@
    *Paste the CSS into “CSS Injection” and save*
 
 ---
+
+## 🌈 自定义流光效果 / How to Add Flowing Effect
+
+1. **粘贴流光 CSS**  
+   将 main 分支中的自定义流光效果 CSS 文件内容复制，并粘贴到你现有主题 CSS 的末尾  
+   *Copy the flowing effect CSS from the main branch and paste it at the end of your existing theme CSS*
+
+2. **打开设置**  
+   Clash Verge Rev → 设置 → 主题设置 → CSS 注入  
+   *Clash Verge Rev → Settings → Theme Settings → CSS Injection*
+
+3. **粘贴并保存**  
+   将完整 CSS 粘贴到“CSS 注入”，点击保存即可启用流光效果  
+   *Paste the full CSS into “CSS Injection” and click save to enable the flowing effect*
+
+4. **自定义颜色与透明度（可选）**  
+   修改 `--flow-color` 或 `--bg-flow-color` 的 RGB 数值以更换颜色；调整 `rgba(..., 透明度)` 中的透明度系数（如 0.2、0.35、0.5）以增强或减弱效果  
+   *Customize the color by editing the RGB values in `--flow-color` or `--bg-flow-color`; adjust the alpha values in `rgba(..., alpha)` (e.g., 0.2, 0.35, 0.5) to strengthen or soften the effect*
