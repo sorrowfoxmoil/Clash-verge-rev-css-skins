@@ -1,0 +1,667 @@
+/* 优化版浅色蓝紫色主题 - 加深颜色、强化背景、加强透明 */
+/* 背景图片与主容器样式 - 强化背景图显示 */
+.css-1li7dvq,
+.css-l3ykv8,
+body,
+html {
+    background: url('https://i.postimg.cc/wMpwFMcX/illust-107335180-20231015-190436.png') fixed center/cover !important;
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden !important;
+}
+
+/* 基础滚动修复 - 防止页面水平滚动 */
+.css-1li7dvq,
+.css-l3ykv8,
+body,
+html {
+    overflow-x: hidden !important;
+}
+
+/* 左侧工具栏滚动条修复 - 匹配主题风格 */
+[class*="nav"], [class*="sidebar"], [class*="menu"] {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+/* 自定义工具栏滚动条样式 - 加深蓝紫色 */
+[class*="nav"]::-webkit-scrollbar,
+[class*="sidebar"]::-webkit-scrollbar,
+[class*="menu"]::-webkit-scrollbar {
+    width: 4px !important;
+}
+[class*="nav"]::-webkit-scrollbar-track,
+[class*="sidebar"]::-webkit-scrollbar-track,
+[class*="menu"]::-webkit-scrollbar-track {
+    background: rgba(180, 170, 220, 0.4) !important;
+    border-radius: 2px;
+}
+[class*="nav"]::-webkit-scrollbar-thumb,
+[class*="sidebar"]::-webkit-scrollbar-thumb,
+[class*="menu"]::-webkit-scrollbar-thumb {
+    background: rgba(130, 110, 190, 0.6) !important;
+    border-radius: 2px;
+}
+[class*="nav"]::-webkit-scrollbar-thumb:hover,
+[class*="sidebar"]::-webkit-scrollbar-thumb:hover,
+[class*="menu"]::-webkit-scrollbar-thumb:hover {
+    background: rgba(150, 130, 210, 0.8) !important;
+}
+
+/* 防止容器内容溢出导致额外滚动条 */
+[class*="container"], [class*="wrapper"] {
+    overflow: hidden !important;
+}
+
+/* 优化叠加层 - 提高背景图优先级 */
+.css-l3ykv8::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+        rgba(230, 225, 245, 0.7) 0%, 
+        rgba(210, 200, 235, 0.5) 30%, 
+        rgba(220, 215, 240, 0.6) 70%, 
+        rgba(240, 235, 250, 0.8) 100%);
+    z-index: 1;
+}
+
+/* 优化流光效果 - 更加明显 */
+.css-l3ykv8::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 20%,
+        rgba(150, 130, 210, 0.2) 35%,
+        rgba(170, 150, 230, 0.4) 50%,
+        rgba(150, 130, 210, 0.2) 65%,
+        transparent 80%
+    );
+    animation: shine 4s infinite linear;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+/* 主内容容器 - 加深颜色、加强透明 */
+.css-1li7dvq > *, .css-l3ykv8 > * {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(135deg, 
+        rgba(200, 190, 230, 0.5) 0%, 
+        rgba(180, 170, 220, 0.4) 100%) !important;
+    border: 1.5px solid rgba(130, 110, 190, 0.6) !important;
+    border-radius: 8px;
+    box-shadow: 
+        0 8px 25px rgba(110, 90, 170, 0.2),
+        0 0 0 1px rgba(150, 130, 210, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    backdrop-filter: blur(12px);
+}
+
+/* 大组件悬停效果 - 加深颜色、强化光效 */
+.css-1li7dvq > *:hover,
+.css-l3ykv8 > *:hover {
+    background: linear-gradient(135deg, 
+        rgba(210, 200, 235, 0.6) 0%, 
+        rgba(190, 180, 225, 0.5) 100%) !important;
+    border-color: rgba(150, 130, 210, 0.8);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 
+        0 0 30px rgba(140, 120, 200, 0.5),
+        0 12px 35px rgba(110, 90, 170, 0.15),
+        inset 0 0 25px rgba(170, 150, 225, 0.4);
+    animation: pulseEnhancedBlue 2s infinite;
+}
+
+@keyframes pulseEnhancedBlue {
+    0%, 100% { 
+        box-shadow: 
+            0 0 30px rgba(140, 120, 200, 0.5),
+            0 12px 35px rgba(110, 90, 170, 0.15);
+    }
+    50% { 
+        box-shadow: 
+            0 0 40px rgba(160, 140, 220, 0.7),
+            0 15px 40px rgba(130, 110, 190, 0.2);
+    }
+}
+
+/* 选中状态 - 加深颜色、强化光效 */
+.css-1li7dvq > *[class*="selected"],
+.css-l3ykv8 > *[class*="selected"],
+.css-1li7dvq > *[class*="active"],
+.css-l3ykv8 > *[class*="active"] {
+    border: 2px solid rgba(150, 130, 210, 0.9) !important;
+    box-shadow: 
+        0 0 30px rgba(140, 120, 200, 0.7),
+        0 0 45px rgba(130, 110, 190, 0.4) !important;
+    background: rgba(190, 180, 225, 0.6) !important;
+    animation: selectedPulseEnhancedBlue 2s infinite ease-in-out !important;
+    z-index: 100 !important;
+}
+
+@keyframes selectedPulseEnhancedBlue {
+    0%, 100% { 
+        box-shadow: 
+            0 0 30px rgba(140, 120, 200, 0.7),
+            0 0 45px rgba(130, 110, 190, 0.4);
+    }
+    50% { 
+        box-shadow: 
+            0 0 40px rgba(160, 140, 220, 0.9),
+            0 0 60px rgba(150, 130, 210, 0.6);
+    }
+}
+
+/* 测试按钮组 */
+[class*="test"], [class*="website-test"],
+[class*="button-group"] {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 12px !important;
+    justify-content: center !important;
+}
+
+/* 测试按钮样式 - 加深颜色 */
+[class*="test-button"], [class*="website-button"],
+button[class*="test"], button[class*="website"] {
+    flex: 1;
+    min-width: 120px;
+    background: linear-gradient(135deg, 
+        rgba(200, 190, 230, 0.5) 0%, 
+        rgba(180, 170, 220, 0.4) 100%) !important;
+    border: 1.5px solid rgba(130, 110, 190, 0.6) !important;
+    border-radius: 6px;
+    padding: 12px 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    color: rgba(80, 60, 140, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
+
+/* 测试按钮悬停效果 - 加深颜色、强化光效 */
+[class*="test-button"]:hover, [class*="website-button"]:hover,
+button[class*="test"]:hover, button[class*="website"]:hover {
+    background: linear-gradient(135deg, 
+        rgba(210, 200, 235, 0.6) 0%, 
+        rgba(190, 180, 225, 0.5) 100%) !important;
+    border-color: rgba(150, 130, 210, 0.8) !important;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 
+        0 6px 20px rgba(110, 90, 170, 0.2),
+        0 0 20px rgba(140, 120, 200, 0.5) !important;
+}
+
+/* 加深蓝紫色流光效果 */
+[class*="test-button"]:hover::before, [class*="website-button"]:hover::before,
+button[class*="test"]:hover::before, button[class*="website"]:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(150, 130, 210, 0.4),
+        rgba(170, 150, 230, 0.6),
+        rgba(150, 130, 210, 0.4),
+        transparent
+    );
+    animation: buttonFlow 1s ease-in-out;
+    z-index: -1;
+}
+
+@keyframes buttonFlow {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* 测试按钮选中状态 - 加深颜色 */
+[class*="test-button"][class*="selected"],
+[class*="website-button"][class*="selected"],
+[class*="test-button"][class*="active"], 
+[class*="website-button"][class*="active"] {
+    border: 2px solid rgba(150, 130, 210, 0.9) !important;
+    box-shadow: 
+        0 0 25px rgba(140, 120, 200, 0.6),
+        0 0 40px rgba(130, 110, 190, 0.4) !important;
+    background: rgba(170, 160, 215, 0.7) !important;
+}
+
+/* 开关按钮样式 - 加深颜色 */
+[class*="proxy"], [class*="system-proxy"],
+.MuiSwitch-root, [role="switch"] {
+    background: rgba(190, 180, 225, 0.5) !important;
+    border: 1.5px solid rgba(130, 110, 190, 0.6) !important;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 8px 0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+/* 开关悬停效果 - 加深蓝紫色流光 */
+[class*="proxy"]:hover, [class*="system-proxy"]:hover,
+.MuiSwitch-root:hover, [role="switch"]:hover {
+    border-color: rgba(150, 130, 210, 0.8) !important;
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(140, 120, 200, 0.4) !important;
+}
+
+[class*="proxy"]:hover::before, [class*="system-proxy"]:hover::before,
+.MuiSwitch-root:hover::before, [role="switch"]:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(150, 130, 210, 0.3),
+        rgba(170, 150, 230, 0.5),
+        rgba(150, 130, 210, 0.3),
+        transparent
+    );
+    animation: switchFlow 1.2s ease-in-out;
+    z-index: -1;
+}
+
+@keyframes switchFlow {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* 开关轨道和滑块 - 加深颜色 */
+.MuiSwitch-track {
+    background: rgba(150, 130, 210, 0.6) !important;
+    transition: all 0.3s ease;
+}
+
+.MuiSwitch-thumb {
+    background: rgba(180, 170, 225, 0.9) !important;
+    transition: all 0.3s ease;
+}
+
+.Mui-checked + .MuiSwitch-track {
+    background: rgba(160, 140, 220, 0.7) !important;
+    box-shadow: 
+        0 0 12px rgba(140, 120, 200, 0.5),
+        inset 0 0 8px rgba(190, 180, 235, 0.4) !important;
+}
+
+.Mui-checked .MuiSwitch-thumb {
+    background: rgba(190, 180, 235, 0.95) !important;
+    box-shadow: 
+        0 0 18px rgba(160, 140, 220, 0.8),
+        0 0 30px rgba(190, 180, 235, 0.4) !important;
+    transform: scale(1.2);
+}
+
+/* 全局透明 - 加强效果 */
+* { background-color: transparent !important; }
+
+/* 设置面板 - 加深颜色、加强透明 */
+[class*="settings"], [class*="panel"],
+[class*="config"], [class*="control"] {
+    background: linear-gradient(135deg, 
+        rgba(200, 190, 230, 0.4) 0%, 
+        rgba(180, 170, 220, 0.3) 100%) !important;
+    border: 1.5px solid rgba(130, 110, 190, 0.5) !important;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(12px);
+}
+
+/* 设置面板悬停效果 */
+[class*="settings"]:hover, [class*="panel"]:hover,
+[class*="config"]:hover, [class*="control"]:hover {
+    border-color: rgba(150, 130, 210, 0.7) !important;
+    transform: translateY(-3px);
+    box-shadow: 
+        0 8px 25px rgba(110, 90, 170, 0.15),
+        0 0 20px rgba(140, 120, 200, 0.3) !important;
+}
+
+/* 状态指示器 - 加深颜色 */
+[class*="status"], [class*="connected"] {
+    background: rgba(190, 180, 225, 0.5) !important;
+    border: 1.5px solid rgba(130, 110, 190, 0.5) !important;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(6px);
+}
+
+/* 连接状态 */
+[class*="connected"] {
+    border-color: rgba(150, 130, 210, 0.7) !important;
+    box-shadow: 0 0 12px rgba(140, 120, 200, 0.4) !important;
+    color: rgba(100, 80, 160, 0.95) !important;
+}
+
+/* 表格样式 - 加深颜色、加强透明 */
+table, tr, td, th {
+    background: rgba(200, 190, 230, 0.25) !important;
+    border-color: rgba(150, 130, 210, 0.25) !important;
+    backdrop-filter: blur(8px);
+}
+
+/* 表格行悬停效果 - 加深蓝紫色流光 */
+tr {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+tr:hover {
+    background: rgba(210, 200, 235, 0.35) !important;
+    transform: translateX(4px);
+    box-shadow: 0 0 12px rgba(140, 120, 200, 0.3) !important;
+}
+
+tr:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(150, 130, 210, 0.3),
+        rgba(170, 150, 230, 0.4),
+        rgba(150, 130, 210, 0.3),
+        transparent
+    );
+    animation: rowFlow 1.5s ease-in-out;
+    z-index: -1;
+}
+
+@keyframes rowFlow {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* 表格行选中状态 - 加深颜色 */
+tr[class*="selected"],
+tr[class*="active"] {
+    background: rgba(180, 170, 220, 0.45) !important;
+    border-left: 4px solid rgba(150, 130, 210, 0.9) !important;
+    box-shadow: 
+        0 0 18px rgba(140, 120, 200, 0.5),
+        inset 0 0 12px rgba(170, 150, 225, 0.15) !important;
+}
+
+/* 文字样式 - 加深颜色、强化光效 */
+.text-primary, .title, h1, h2, h3, h4, h5, h6 {
+    color: rgba(90, 70, 150, 0.95) !important;
+    text-shadow: 
+        0 1px 2px rgba(255, 255, 255, 0.8),
+        0 0 12px rgba(150, 130, 210, 0.5),
+        0 0 25px rgba(130, 110, 190, 0.3);
+    transition: all 0.3s ease;
+}
+
+.text-primary:hover, .title:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: rgba(110, 90, 170, 0.95) !important;
+    text-shadow: 
+        0 0 18px rgba(170, 150, 230, 0.7),
+        0 0 30px rgba(150, 130, 210, 0.4) !important;
+    transform: translateY(-3px) scale(1.05);
+}
+
+.text-primary[class*="selected"], .title[class*="selected"] {
+    color: rgba(120, 100, 180, 0.98) !important;
+    text-shadow: 
+        0 0 25px rgba(160, 140, 220, 0.9),
+        0 0 35px rgba(150, 130, 210, 0.6) !important;
+    animation: textGlowEnhancedBlue 2s infinite alternate !important;
+}
+
+@keyframes textGlowEnhancedBlue {
+    0% {
+        text-shadow: 
+            0 0 25px rgba(160, 140, 220, 0.9),
+            0 0 35px rgba(150, 130, 210, 0.6);
+    }
+    100% {
+        text-shadow: 
+            0 0 30px rgba(170, 150, 230, 1),
+            0 0 40px rgba(160, 140, 220, 0.8);
+    }
+}
+
+.text-secondary, p, span {
+    color: rgba(100, 80, 160, 0.9) !important;
+    text-shadow: 0 0 8px rgba(150, 130, 210, 0.4);
+}
+
+/* 按钮样式 - 加深蓝紫色流光 */
+button, .btn, [role="button"] {
+    background: linear-gradient(135deg, 
+        rgba(200, 190, 230, 0.5) 0%, 
+        rgba(180, 170, 220, 0.4) 100%) !important;
+    border: 1.5px solid rgba(130, 110, 190, 0.6) !important;
+    color: rgba(90, 70, 150, 0.95) !important;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 0 8px rgba(150, 130, 210, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+button:hover, .btn:hover, [role="button"]:hover {
+    background: linear-gradient(135deg, 
+        rgba(210, 200, 235, 0.6) 0%, 
+        rgba(190, 180, 225, 0.5) 100%) !important;
+    border-color: rgba(150, 130, 210, 0.8) !important;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 
+        0 6px 20px rgba(110, 90, 170, 0.2),
+        0 0 20px rgba(140, 120, 200, 0.5) !important;
+}
+
+button:hover::before, .btn:hover::before, [role="button"]:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(150, 130, 210, 0.4),
+        rgba(170, 150, 230, 0.6),
+        rgba(150, 130, 210, 0.4),
+        transparent
+    );
+    animation: generalButtonFlow 1s ease-in-out;
+    z-index: -1;
+}
+
+@keyframes generalButtonFlow {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+button[class*="selected"], .btn[class*="selected"], [role="button"][class*="selected"] {
+    border: 2px solid rgba(150, 130, 210, 0.9) !important;
+    box-shadow: 
+        0 0 25px rgba(140, 120, 200, 0.6),
+        0 0 40px rgba(130, 110, 190, 0.4) !important;
+    background: rgba(170, 160, 215, 0.7) !important;
+}
+
+/* 输入框 - 加深颜色、加强透明 */
+input, textarea, select {
+    background: rgba(200, 190, 230, 0.35) !important;
+    border: 1.5px solid rgba(130, 110, 190, 0.5) !important;
+    color: rgba(90, 70, 150, 0.95) !important;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(6px);
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: rgba(150, 130, 210, 0.9) !important;
+    box-shadow: 
+        0 0 25px rgba(140, 120, 200, 0.5),
+        inset 0 0 10px rgba(170, 150, 225, 0.3) !important;
+    background: rgba(210, 200, 235, 0.45) !important;
+    transform: scale(1.03);
+}
+
+/* 滚动条 - 加深蓝紫色 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(190, 180, 225, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, 
+        rgba(130, 110, 190, 0.6) 0%, 
+        rgba(110, 90, 170, 0.5) 100%);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, 
+        rgba(150, 130, 210, 0.7) 0%, 
+        rgba(130, 110, 190, 0.6) 100%);
+    box-shadow: 0 0 12px rgba(140, 120, 200, 0.5);
+}
+
+/* 特殊元素 - 加深颜色 */
+[class*="speed"], [class*="download"], [class*="upload"] {
+    color: rgba(110, 90, 170, 0.95) !important;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(150, 130, 210, 0.5);
+}
+
+[class*="待检测"] {
+    color: rgba(110, 90, 170, 0.9) !important;
+    font-weight: 600;
+    animation: blink 2s infinite;
+    position: relative;
+}
+
+[class*="待检测"]::after {
+    content: "✦";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(130, 110, 190, 0.8);
+    animation: spin 2s infinite linear;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+@keyframes spin {
+    0% { transform: translateY(-50%) rotate(0deg); }
+    100% { transform: translateY(-50%) rotate(360deg); }
+}
+
+/* 强制透明覆盖 */
+[style*="background:"]:not([style*="url"]),
+[style*="background-color"]:not([style*="rgba(0,0,0"]) {
+    background: transparent !important;
+}
+
+/* === 订阅标签图标隐藏修复 === */
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-14vn3vf {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+}
+
+[class*="subscription"] svg.MuiSvgIcon-root,
+[class*="account"] svg.MuiSvgIcon-root,
+[class*="user"] svg.MuiSvgIcon-root {
+    display: none !important;
+}
+
+[class*="subscription"] > div,
+[class*="account"] > div,
+[class*="user"] > div {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+}
+
+[class*="subscription"] span:first-of-type,
+[class*="account"] span:first-of-type,
+[class*="user"] span:first-of-type {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* 修复所有可能遗漏的非透明背景 - 加深颜色 */
+[style*="background-color"]:not([style*="transparent"]):not([style*="rgba(0,0,0,0"]):not(.css-1li7dvq):not(.css-l3ykv8) {
+    background-color: rgba(200, 190, 230, 0.25) !important;
+    backdrop-filter: blur(10px);
+}
+
+/* 强制修复所有白色或浅色背景 - 加深颜色 */
+[style*="background: white"],
+[style*="background: #fff"],
+[style*="background: #ffffff"],
+[style*="background-color: white"],
+[style*="background-color: #fff"],
+[style*="background-color: #ffffff"] {
+    background: rgba(200, 190, 230, 0.35) !important;
+    backdrop-filter: blur(10px);
+}
