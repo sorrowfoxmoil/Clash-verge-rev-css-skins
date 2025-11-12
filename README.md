@@ -56,7 +56,7 @@
 </details>
 
 <details>
-  <summary><h2> ☁ 移除悬停强调效果及边框 / Usage Guide for Removing Hover Highlight and Border </h2></summary>
+<summary><h2> ☁ 移除悬停强调效果及边框 / Usage Guide for Removing Hover Highlight and Border </h2></summary>
   
   ## ❓ 为什么要加入移除效果 / Why Add the Removal Effect
 
@@ -72,8 +72,6 @@
 <p align="center">
 <img width="45%" alt="image" src="https://github.com/user-attachments/assets/57ff009f-f36a-4396-9b7f-2b5e6f8cdbbd" />
 <img width="45%" alt="image" src="https://github.com/user-attachments/assets/d61712cd-b178-4016-9d27-35342138d092" />
-
-
 
 </details>
 
