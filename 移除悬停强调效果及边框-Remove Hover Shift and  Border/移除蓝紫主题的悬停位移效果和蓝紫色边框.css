@@ -1,0 +1,6 @@
+/* 移除主内容容器的悬停位移效果和边框变化 */
+.css-1li7dvq > *:hover,
+.css-l3ykv8 > *:hover {
+    transform: none !important;
+    border-color: rgba(90, 70, 200, 0.45) !important;
+}

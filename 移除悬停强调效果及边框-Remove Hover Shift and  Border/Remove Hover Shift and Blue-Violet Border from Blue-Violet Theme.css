@@ -1,0 +1,6 @@
+/*Remove Hover Shift and Blue-Violet Border from Blue-Violet Theme*/
+.css-1li7dvq > *:hover,
+.css-l3ykv8 > *:hover {
+    transform: none !important;
+    border-color: rgba(90, 70, 200, 0.45) !important;
+}

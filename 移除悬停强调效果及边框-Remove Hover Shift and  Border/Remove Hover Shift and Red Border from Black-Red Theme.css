@@ -1,0 +1,6 @@
+/*Remove Hover Shift and Red Border from Black-Red Theme*/
+.css-1li7dvq > *:hover,
+.css-l3ykv8 > *:hover {
+    transform: none !important;
+    border-color: rgba(140, 0, 0, 0.45) !important;
+}
