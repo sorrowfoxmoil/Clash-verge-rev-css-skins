@@ -16,7 +16,9 @@
   <img src="https://github.com/user-attachments/assets/1e3240ab-5f21-4231-b12a-69c1ba4af9a1" alt="背景流光版1" width="45%" />
 </p>
 </details>
-  
+
+<h2>深色主题</h2>
+
 ### 🔴🔵 流光 / Transparent Red & Blue-Violet
 <p align="center">
   <img src="https://github.com/user-attachments/assets/057fbaf8-9446-448b-af12-7dd206c852b9" width="45%" />
@@ -44,6 +46,20 @@
 </p>
 
 ---
+<details>
+<summary><h2>浅色主题</h2></summary>
+  
+### ❄️ 看着还行的浅色蓝紫 / Decent Light Blue-Violet
+<p align="center">
+  <img width="50%" alt="image" src="https://github.com/user-attachments/assets/22a65b50-a8fb-442e-8645-741eb76e31d9" />
+</p>
+
+### ✨ 更模糊的浅色蓝紫 / Deeper Light Blue-Violet
+<p align="center">
+  <img width="50%" alt="image" src="https://github.com/user-attachments/assets/29aec7c7-921c-4782-8c78-8a12fd731df4" />
+</p>
+</details>
+
 <details>
 <summary> <h2>⚠️ 已知问题 / Known Issues</h2></summary>
 
